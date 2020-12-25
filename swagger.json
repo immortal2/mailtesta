@@ -1,0 +1,48 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "TempMail API",
+        "description": "TempMail API Information",
+        "contact": {
+            "name": "TempMail Developement"
+        },
+        "servers": [
+            "http://localhost:3000"
+        ]
+    },
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "tags": [
+        {
+            "name": "quotes",
+            "description": "Operations about quote"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/quotes/{id}": {
+            "get": {
+                "tags": [
+                    "quotes"
+                ],
+                "summary": "get new quote by ID",
+                "operationId": "getNewQoute",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
